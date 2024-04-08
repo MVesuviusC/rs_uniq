@@ -5,8 +5,14 @@ The way that the normal `uniq` command works is that it takes in a sorted list o
 
 ## Usage
 
+Unique and count the number of copies of each line in a file
 ```bash
+rs_uniq -i big_test_file.txt -c > output.txt
+```
 
+Unique a file and write the output to a file
+```bash
+rs_uniq -i big_test_file.txt > output.txt
 ```
 
 ## Installation
