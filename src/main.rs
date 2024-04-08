@@ -43,7 +43,7 @@ fn main() {
         // If the count flag is set, print the count of each key
         if cmd_args.get_flag("count") {
             let count = my_map.get(key).unwrap();
-            println!("{}: {}", key, count);
+            println!("{}\t{}", key, count);
         } else {
             println!("{}", key);
         }
