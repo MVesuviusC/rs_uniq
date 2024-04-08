@@ -18,3 +18,23 @@ This is a project I'm using to practice rust. I've been programming for quite a 
 
 ## to do
 Write like, anything.
+
+## Testing
+
+time target/release/rs_uniq -i big_test_file.txt -c | wc -l
+14208
+real    0m2.314s
+user    0m2.187s
+sys     0m0.137s
+
+time perlUnique.pl -c big_test_file.txt |wc -l
+14208
+real    0m14.547s
+user    0m14.260s
+sys     0m0.244s
+
+time sort big_test_file.txt | uniq -c |wc -l
+14208
+real    1m17.539s
+user    3m43.580s
+sys     0m1.334s
