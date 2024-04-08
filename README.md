@@ -27,6 +27,7 @@ Write like, anything.
 
 ## Testing
 
+```bash
 time target/release/rs_uniq -i big_test_file.txt -c | wc -l
 14208
 real    0m2.314s
@@ -44,3 +45,4 @@ time sort big_test_file.txt | uniq -c |wc -l
 real    1m17.539s
 user    3m43.580s
 sys     0m1.334s
+```
